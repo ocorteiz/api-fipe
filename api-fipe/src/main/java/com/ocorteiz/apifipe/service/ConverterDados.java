@@ -27,7 +27,7 @@ public class ConverterDados implements IConverterDados{
         try {
             return mapper.readValue(json, lista);
         } catch (JsonProcessingException e) {
-            throw new RuntimeException(e);
+             throw new RuntimeException(e);
         }
 
     }
